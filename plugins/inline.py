@@ -28,7 +28,7 @@ async def inline(_, query: InlineQuery):
         	translation = translator.translate(text,dest = cd)
         except:
         	return
-        TRTEXT=  [ InlineQueryResultArticle( title=f"Translated from {translation.src} To {translation.dest}", input_message_content=InputTextMessageContent(translation.text),description=f'{translation.text}',thumb_url="https://tg-link.herokuapp.com/dl/0/AgADh60xG50-wFc.jpg")]
+        TRTEXT=  [ InlineQueryResultArticle( title=f"Tərcümə edildi {translation.src} ····> {translation.dest}", input_message_content=InputTextMessageContent(translation.text),description=f'{translation.text}',thumb_url="https://tg-link.herokuapp.com/dl/0/AgADh60xG50-wFc.jpg")]
         try:
         	await query.answer(results=TRTEXT ,  cache_time=2, switch_pm_text="Google Translater",switch_pm_parameter="start")
         except:
