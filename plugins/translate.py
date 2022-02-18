@@ -43,7 +43,7 @@ async def echo(client, message):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton(" Növbəti --->",callback_data = "page2")
+	[InlineKeyboardButton(" Növbəti ····>",callback_data = "page2")
 	]
 	] )
 	try:
@@ -65,11 +65,11 @@ async def echo(client, message):
 							fromt = i
 						if list[i] == translation.dest:
 							to = i
-					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n  Abunə olun @EpicPeojects ")
+					await message.reply_text(f"Tərcümə edildi **{fromt.capitalize()}** ····> **{to.capitalize()}**\n\n```{translation.text}```\n\n  Abunə olun @EpicPeojects ")
 			except Exception as e:
-					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n Abunə olun @EpicPeojects")
+					await message.reply_text(f"Tərcümə edildi **{translation.src}** ····> **{translation.dest}**\n\n```{translation.text}```\n\n Abunə olun @EpicPeojects")
 	else:
-		await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup =keybord1)
+		await  message.reply_text("Dili seç 👇",reply_to_message_id = message.message_id, reply_markup =keybord1)
 
 @Client.on_callback_query()
 async def translate_text(bot,update):
@@ -100,7 +100,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton(" Növbəti --->",callback_data = "page2")
+	[InlineKeyboardButton(" Növbəti ····>",callback_data = "page2")
 	]
 	] )
 
@@ -129,8 +129,8 @@ async def translate_text(bot,update):
            InlineKeyboardButton("Indonesian",callback_data = "id"),
            InlineKeyboardButton("Irish",callback_data = "ga")
            ],
-           [InlineKeyboardButton("<--- Geri",callback_data = "page1"),
-           InlineKeyboardButton(" Next --->",callback_data = "page3"),
+           [InlineKeyboardButton("<···· Geri",callback_data = "page1"),
+           InlineKeyboardButton(" Next ····>",callback_data = "page3"),
            ]
             ])
 		
@@ -159,8 +159,8 @@ async def translate_text(bot,update):
                 InlineKeyboardButton("Malagasy",callback_data ="mg"),
                 InlineKeyboardButton("Malay",callback_data ="ms")
                 ],
-                [InlineKeyboardButton("<--- Geri",callback_data = "page2"),
-                InlineKeyboardButton(" Növbəti --->",callback_data = "page4")
+                [InlineKeyboardButton("<···· Geri",callback_data = "page2"),
+                InlineKeyboardButton(" Növbəti ····>",callback_data = "page4")
                 ]
               
  
@@ -191,8 +191,8 @@ async def translate_text(bot,update):
           InlineKeyboardButton("Russian",callback_data = "ru"),
           InlineKeyboardButton("Samoan",callback_data= "sm"),
           ],
-          [InlineKeyboardButton("<--- Geri",callback_data = "page3"),
-          InlineKeyboardButton("Növbəti --->",callback_data = "page5")
+          [InlineKeyboardButton("<···· Geri",callback_data = "page3"),
+          InlineKeyboardButton("Növbəti ····>",callback_data = "page5")
           ]
           
  
@@ -225,8 +225,8 @@ async def translate_text(bot,update):
          InlineKeyboardButton("Tatar",callback_data = "tt"),
          InlineKeyboardButton("Telugu",callback_data = "te")
          ],
-         [InlineKeyboardButton("<--- Geri",callback_data = "page4"),
-         InlineKeyboardButton("Nəvbəti --->",callback_data = "page6")
+         [InlineKeyboardButton("<···· Geri",callback_data = "page4"),
+         InlineKeyboardButton("Nəvbəti ····>",callback_data = "page6")
          ]  ])
 
 
@@ -250,7 +250,7 @@ async def translate_text(bot,update):
        [InlineKeyboardButton("Xhosa",callback_data = "xh"),
        InlineKeyboardButton("Yiddish",callback_data = "yi"),
        InlineKeyboardButton("Yoruba",callback_data = "yo")],
-       [InlineKeyboardButton("<--- Geri",callback_data = "page5")
+       [InlineKeyboardButton("<···· Geri",callback_data = "page5")
        
        ] ])
       
@@ -283,7 +283,7 @@ async def translate_text(bot,update):
       					fromt = i
       				if list[i] == translation.dest:
       					to = i 
-      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n Abunə olun @EpicPeojects")
+      			await update.message.edit(f"Tərcümə edildi **{fromt.capitalize()}** ····> **{to.capitalize()}**\n\n```{translation.text}```\n\n Abunə olun @EpicPeojects")
       		except Exception as e:
-      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n Abunə olun @EpicPeojects")
+      			await update.message.edit(f"Tərcümə edildi **{translation.src}** ····> **{translation.dest}**\n\n```{translation.text}```\n\n Abunə olun @EpicPeojects")
       						
